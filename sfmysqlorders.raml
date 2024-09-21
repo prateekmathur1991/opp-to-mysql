@@ -1,0 +1,22 @@
+#%RAML 1.0
+title: sfmysqlorders
+baseUri: http://api.ordersys.com/{version}
+version: v1
+
+types:
+    order: |
+        
+
+/orders:
+    post:
+        description: |
+            The details of the order to be created.
+
+            This has to be in a valid JSON object. Read the JSON example to understand more
+        body:
+            application/json:
+                example: |
+                    {
+                        "companyName": "ABC Pharma Ltd",
+                        "amount": 345.63
+                    }

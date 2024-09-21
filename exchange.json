@@ -1,0 +1,10 @@
+{
+  "main": "sfmysqlorders.raml",
+  "name": "sfmysqlorders",
+  "classifier": "raml",
+  "apiVersion": "v1",
+  "descriptorVersion": "1.0.0",
+  "groupId": null,
+  "assetId": "sfmysqlorders",
+  "version": "1.0.0"
+}
