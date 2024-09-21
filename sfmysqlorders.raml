@@ -5,7 +5,39 @@ version: v1
 
 types:
     order: |
-        
+        {
+            "$schema": "https://json-schema.org/draft/2019-09/schema",
+            "$id": "http://example.com/example.json",
+            "type": "object",
+            "default": {},
+            "title": "Root Schema",
+            "required": [
+                "companyName",
+                "amount"
+            ],
+            "properties": {
+                "companyName": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The companyName Schema",
+                    "examples": [
+                        "ABC Pharma Ltd"
+                    ]
+                },
+                "amount": {
+                    "type": "number",
+                    "default": 0.0,
+                    "title": "The amount Schema",
+                    "examples": [
+                        345.63
+                    ]
+                }
+            },
+            "examples": [{
+                "companyName": "ABC Pharma Ltd",
+                "amount": 345.63
+            }]
+        }
 
 /orders:
     post:
@@ -15,6 +47,7 @@ types:
             This has to be in a valid JSON object. Read the JSON example to understand more
         body:
             application/json:
+                type: order
                 example: |
                     {
                         "companyName": "ABC Pharma Ltd",
