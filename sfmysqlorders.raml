@@ -9,7 +9,10 @@ types:
             "$schema": "https://json-schema.org/draft/2019-09/schema",
             "$id": "http://example.com/example.json",
             "type": "object",
-            "default": {},
+            "default": {
+                "companyName": "Default",
+                "amount": 0.0
+            },
             "title": "Root Schema",
             "required": [
                 "companyName",
@@ -53,3 +56,11 @@ types:
                         "companyName": "ABC Pharma Ltd",
                         "amount": 345.63
                     }
+        responses:
+            200:
+                body:
+                    application/json:
+                        example: |
+                            {
+                                "orderId": "OR-00001"
+                            }
