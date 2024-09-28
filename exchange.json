@@ -1,10 +1,11 @@
 {
-  "main": "sfmysqlorders.raml",
-  "name": "sfmysqlorders",
-  "classifier": "raml",
+  "version": "1.0.1",
   "apiVersion": "v1",
   "descriptorVersion": "1.0.0",
-  "groupId": null,
+  "classifier": "raml",
+  "main": "sfmysqlorders.raml",
   "assetId": "sfmysqlorders",
-  "version": "1.0.0"
+  "groupId": "d4bf6765-2d9d-490b-a3dd-b16bfbc1dff9",
+  "organizationId": "d4bf6765-2d9d-490b-a3dd-b16bfbc1dff9",
+  "name": "sfmysqlorders"
 }
