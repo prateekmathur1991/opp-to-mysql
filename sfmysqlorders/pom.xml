@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    
-    <groupId>d4bf6765-2d9d-490b-a3dd-b16bfbc1dff9</groupId>
-    <artifactId>sfmysqlorders</artifactId>
+    <groupId>com.mycompany</groupId>
+    <artifactId>mysqlordersintegration</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
-    
-    <name>sfmysqlorders</name>
-    
+    <name>mysqlordersintegration</name>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <mule.maven.plugin.version>4.0.0</mule.maven.plugin.version>
     </properties>
-    
     <build>
         <plugins>
             <plugin>
@@ -58,11 +54,10 @@
     </pluginRepositories>
     <dependencies>
         <dependency>
-            <groupId>d4bf6765-2d9d-490b-a3dd-b16bfbc1dff9</groupId>
-            <artifactId>sfmysqlorders</artifactId>
-            <version>1.0.1</version>
-            <classifier>raml</classifier>
-            <type>zip</type>
+            <groupId>org.mule.connectors</groupId>
+            <artifactId>mule-http-connector</artifactId>
+            <version>1.9.2</version>
+            <classifier>mule-plugin</classifier>
         </dependency>
     </dependencies>
 </project>
