@@ -5,7 +5,7 @@
     <http:listener-connection host="0.0.0.0" port="8081"/>
   </http:listener-config>
   <flow name="createOrders">
-        <http:listener path="orders" config-ref="inbound-request" doc:name="Listener" doc:id="wgwrsk" allowedMethods="GET"/>
-        <set-payload value="OR-00001" doc:name="Set payload" doc:id="ismmhx"/>
+        <http:listener path="orders" config-ref="inbound-request" doc:name="Listener" doc:id="wgwrsk" />
+		<set-payload value="OR-00001" doc:name="Set payload" doc:id="ismmhx"/>
   </flow>
 </mule>
